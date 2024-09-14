@@ -18,17 +18,6 @@ const CollapseMenu = ({items}) => {
         items={items}
       />
       <br />
-      {/* <span>Expand Icon Position: </span> */}
-      {/* <Select
-        value={expandIconPosition}
-        style={{
-          margin: '0 8px',
-        }}
-        onChange={onPositionChange}
-      >
-        <Option value="start">start</Option>
-        <Option value="end">end</Option>
-      </Select> */}
     </>
   );
 };

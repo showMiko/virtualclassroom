@@ -34,6 +34,8 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     await signOut(auth);
+    message.success("Logout Successful");
+    router.push("/")
   };
 
   const handleAdmin=async()=>{
