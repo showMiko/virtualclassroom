@@ -61,6 +61,9 @@ export async function GET(req) {
       });
       const fetchedBooks = await Promise.all(bookPromises);
 
+      console.log(fetchedBooks ," fetched Books")
+      console.log(fetchedSessions ," fetched Sessions");
+
       return new Response(
         JSON.stringify({ books: fetchedBooks, sessions: fetchedSessions }),
         { status: 200 }
